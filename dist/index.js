@@ -1,7 +1,10 @@
 "use strict";
 const userName = "John Doe";
 const age = 30;
-const isAdmin = true;
+const isAdmin = false;
 console.log(userName);
 console.log(age);
 console.log(isAdmin);
+let user = "Jane Smith";
+user = "Alice Johnson";
+console.log(user);
