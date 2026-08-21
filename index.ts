@@ -14,6 +14,9 @@ const fruits: string[] = ["Apple", "Banana", "Cherry"];
 let mixed:(string | number)[]= [];
 mixed.push(numbers[0], fruits[1]);
 
+const greater
+
+
 console.log(numbers);
 console.log(fruits);
 console.log(mixed);
