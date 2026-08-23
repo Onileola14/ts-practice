@@ -30,7 +30,6 @@ const sola = {
     school: "ABC University",
     level: "400l",
 };
-console.log(sola.firstName.toLowerCase().at(0));
 const userName = (firstName, lastName) => {
     return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 };
