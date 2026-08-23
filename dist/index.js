@@ -21,3 +21,12 @@ console.log(greaterThanOne);
 console.log(numbers);
 console.log(fruits);
 console.log(mixed);
+const sola = {
+    name: "Sola",
+    age: 20,
+    classification: "student",
+    favoriteSubjects: ["Math", "Science"],
+    school: "ABC University",
+    level: "400l"
+};
+console.log(sola.age);

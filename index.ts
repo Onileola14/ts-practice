@@ -25,3 +25,24 @@ console.log(greaterThanOne);
 console.log(numbers);
 console.log(fruits);
 console.log(mixed);
+
+type Person = {
+  name: string;
+  age: number;
+  classification: "student" | "teacher" | "admin";
+  favoriteSubjects?: string[];
+  school:string;
+  level?:string;
+
+}
+
+const sola: Person= {
+  name: "Sola",
+  age: 20,
+  classification: "student",
+  favoriteSubjects: ["Math", "Science"],
+  school: "ABC University",
+  level: "400l"
+}
+
+console.log(sola.age);
