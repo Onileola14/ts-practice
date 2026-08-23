@@ -48,15 +48,11 @@ const sola: Person = {
   level: "400L",
 
   userName: function (this: Person): string {
-    return (
-      this.firstName.toLowerCase()[0] +
-      this.lastName.toLowerCase()[0]
-    );
+    return this.firstName.toLowerCase()[0] + this.lastName.toLowerCase()[0];
   },
-};
+}
 
-console.log(sola.userName()); 
-
+console.log(sola);
 
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
@@ -64,4 +60,3 @@ console.log(sola.userName());
 
 // const solaUseName = userName(sola.firstName, sola.lastName);
 // console.log(solaUseName);
-

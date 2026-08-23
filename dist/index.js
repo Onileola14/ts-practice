@@ -29,12 +29,12 @@ const sola = {
     favoriteSubjects: ["Math", "Science"],
     school: "ABC University",
     level: "400L",
-    userName: function () {
-        return (this.firstName.toLowerCase()[0] +
-            this.lastName.toLowerCase()[0]);
+    get userName() {
+        return (this.firstName[0].toLowerCase() +
+            this.lastName[0].toLowerCase());
     },
 };
-console.log(sola.userName());
+console.log(sola);
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 // };
