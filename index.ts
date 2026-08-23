@@ -27,22 +27,28 @@ console.log(fruits);
 console.log(mixed);
 
 type Person = {
-  name: string;
+  firstName: string;
   age: number;
   classification: "student" | "teacher" | "admin";
   favoriteSubjects?: string[];
   school:string;
   level?:string;
+  lastName: string;
 
 }
 
 const sola: Person= {
-  name: "Sola",
+  firstName: "Sola",
+  lastName: "Ogunleye",
   age: 20,
   classification: "student",
   favoriteSubjects: ["Math", "Science"],
   school: "ABC University",
   level: "400l"
 }
+console.log(sola.firstName.slice(0, 2));
 
-console.log(sola.age);
+
+// const userName = () => {
+
+// } 

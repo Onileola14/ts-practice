@@ -22,11 +22,14 @@ console.log(numbers);
 console.log(fruits);
 console.log(mixed);
 const sola = {
-    name: "Sola",
+    firstName: "Sola",
+    lastName: "Ogunleye",
     age: 20,
     classification: "student",
     favoriteSubjects: ["Math", "Science"],
     school: "ABC University",
     level: "400l"
 };
-console.log(sola.age);
+console.log(sola.firstName.slice(0, 2));
+// const userName = () => {
+// } 
