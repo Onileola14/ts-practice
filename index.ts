@@ -1,7 +1,7 @@
-const userName: string = "John Doe";
+const userNam: string = "John Doe";
 const age: number = 30;
 const isAdmin: boolean = false;
-console.log(userName);
+console.log(userNam);
 console.log(age);
 console.log(isAdmin);
 
@@ -17,7 +17,7 @@ mixed.push(numbers[0], fruits[1]);
 const greaterThanOne: (number | undefined)[] = numbers.map((n) => {
   if (n > 1) {
     return n;
-  } 
+  }
 });
 
 console.log(greaterThanOne);
@@ -31,24 +31,24 @@ type Person = {
   age: number;
   classification: "student" | "teacher" | "admin";
   favoriteSubjects?: string[];
-  school:string;
-  level?:string;
+  school: string;
+  level?: string;
   lastName: string;
+};
 
-}
-
-const sola: Person= {
+const sola: Person = {
   firstName: "Sola",
   lastName: "Ogunleye",
   age: 20,
   classification: "student",
   favoriteSubjects: ["Math", "Science"],
   school: "ABC University",
-  level: "400l"
-}
-console.log(sola.firstName.toLocaleLowerCase().split(""));
+  level: "400l",
+};
+console.log(sola.firstName.toLowerCase().at(0));
 
-
-// const userName = () => {
-
-// } 
+const userName = (firstName: string, lastName: string): string | undefined=> {
+  return (
+    firstName.toLowerCase()[0]+ lastName.toLowerCase()[0]
+  );
+};

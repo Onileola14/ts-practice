@@ -1,8 +1,8 @@
 "use strict";
-const userName = "John Doe";
+const userNam = "John Doe";
 const age = 30;
 const isAdmin = false;
-console.log(userName);
+console.log(userNam);
 console.log(age);
 console.log(isAdmin);
 let user = "Jane Smith";
@@ -28,8 +28,9 @@ const sola = {
     classification: "student",
     favoriteSubjects: ["Math", "Science"],
     school: "ABC University",
-    level: "400l"
+    level: "400l",
 };
-console.log(sola.firstName.toLocaleLowerCase().split(""));
-// const userName = () => {
-// } 
+console.log(sola.firstName.toLowerCase().at(0));
+const userName = (firstName, lastName) => {
+    return (firstName.toLowerCase().at(0) + lastName.toLowerCase().at(0));
+};
