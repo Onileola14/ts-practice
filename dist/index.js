@@ -32,5 +32,7 @@ const sola = {
 };
 console.log(sola.firstName.toLowerCase().at(0));
 const userName = (firstName, lastName) => {
-    return (firstName.toLowerCase().at(0) + lastName.toLowerCase().at(0));
+    return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 };
+const solaUseName = userName(sola.firstName, sola.lastName);
+console.log(solaUseName);
