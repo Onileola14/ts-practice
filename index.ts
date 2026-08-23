@@ -34,6 +34,8 @@ type Person = {
   school: string;
   level?: string;
   lastName: string;
+
+  userName(this: Person): string;
 };
 
 const sola: Person = {
@@ -43,14 +45,23 @@ const sola: Person = {
   classification: "student",
   favoriteSubjects: ["Math", "Science"],
   school: "ABC University",
-  level: "400l",
+  level: "400L",
+
+  userName: function (this: Person): string {
+    return (
+      this.firstName.toLowerCase()[0] +
+      this.lastName.toLowerCase()[0]
+    );
+  },
 };
 
+console.log(sola.userName()); 
 
-const userName = (firstName: string, lastName: string): string | undefined => {
-  return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
-};
 
-const solaUseName = userName(sola.firstName, sola.lastName);
-console.log(solaUseName);
+// const userName = (firstName: string, lastName: string): string | undefined => {
+//   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
+// };
+
+// const solaUseName = userName(sola.firstName, sola.lastName);
+// console.log(solaUseName);
 
