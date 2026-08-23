@@ -30,6 +30,6 @@ const sola = {
     school: "ABC University",
     level: "400l"
 };
-console.log(sola.firstName.slice(0, 2));
+console.log(sola.firstName.split(""));
 // const userName = () => {
 // } 
