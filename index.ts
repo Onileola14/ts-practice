@@ -88,7 +88,7 @@ export function estimateResponseTime(
   }
   return Math.round(baseNumber + rateNumber * promptLength);
 }
-console.log(estimateResponseTime(0, "image"));
+console.log(estimateResponseTime());
 
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
