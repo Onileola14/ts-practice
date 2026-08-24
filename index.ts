@@ -88,7 +88,7 @@ export function estimateResponseTime(
   }
   return Math.round(baseNumber + rateNumber * promptLength);
 }
-console.log(estimateResponseTime());
+console.log(estimateResponseTime(8,"text"));
 
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
