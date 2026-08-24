@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.estimateResponseTime = estimateResponseTime;
 const userNam = "John Doe";
 const age = 30;
 const isAdmin = false;
@@ -29,12 +31,42 @@ const sola = {
     favoriteSubjects: ["Math", "Science"],
     school: "ABC University",
     level: "400L",
-    get userName() {
-        return (this.firstName[0].toLowerCase() +
-            this.lastName[0].toLowerCase());
+    userName: function () {
+        return this.firstName.toLowerCase()[0] + this.lastName.toLowerCase()[0];
     },
 };
 console.log(sola);
+const bola = {
+    firstName: "bola",
+    lastName: "oyewole",
+    age: 20,
+    classification: "student",
+    favoriteSubjects: ["Math", "Science"],
+    school: "ABp University",
+    level: "300L",
+    userName: function () {
+        return this.firstName.toLowerCase()[0] + this.lastName.toLowerCase()[0];
+    },
+};
+console.log(bola.userName());
+function estimateResponseTime(promptLength = 100, modelType = "text") {
+    let baseNumber = 0;
+    let rateNumber = 0;
+    if (modelType === "text") {
+        baseNumber = 2;
+        rateNumber = 0.01;
+    }
+    else if (modelType === "image") {
+        baseNumber = 5;
+        rateNumber = 0.02;
+    }
+    else if (modelType === "code") {
+        baseNumber = 3;
+        rateNumber = 0.05;
+    }
+    return Math.round(baseNumber + rateNumber * promptLength);
+}
+console.log(estimateResponseTime(0, "image"));
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 // };

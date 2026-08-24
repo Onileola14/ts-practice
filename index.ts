@@ -50,9 +50,45 @@ const sola: Person = {
   userName: function (this: Person): string {
     return this.firstName.toLowerCase()[0] + this.lastName.toLowerCase()[0];
   },
-}
+};
 
 console.log(sola);
+
+const bola: Person = {
+  firstName: "bola",
+  lastName: "oyewole",
+  age: 20,
+  classification: "student",
+  favoriteSubjects: ["Math", "Science"],
+  school: "ABp University",
+  level: "300L",
+
+  userName: function (this: Person): string {
+    return this.firstName.toLowerCase()[0] + this.lastName.toLowerCase()[0];
+  },
+};
+console.log(bola.userName());
+
+export function estimateResponseTime(
+  promptLength: number = 100,
+  modelType: string = "text",
+) {
+  let baseNumber = 0;
+  let rateNumber = 0;
+
+  if (modelType === "text") {
+    baseNumber = 2;
+    rateNumber = 0.01;
+  } else if (modelType === "image") {
+    baseNumber = 5;
+    rateNumber = 0.02;
+  } else if (modelType === "code") {
+    baseNumber = 3;
+    rateNumber = 0.05;
+  }
+  return Math.round(baseNumber + rateNumber * promptLength);
+}
+console.log(estimateResponseTime(0, "image"));
 
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
