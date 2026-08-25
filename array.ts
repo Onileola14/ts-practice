@@ -44,11 +44,14 @@ const passing = scores.filter((score) => score >= 80); // inferred as number[]
 const total = scores.reduce((sum, score) => sum + score, 0); // inferred as number
 
 // 7. Array of a union of object shapes (a preview of discriminated unions)
-type Notification =
+// Note: named "AppNotification", not "Notification" — "Notification" is
+// already a built-in browser DOM type, and reusing that name causes a
+// "Duplicate identifier" collision.
+type AppNotification =
   | { type: "email"; address: string }
   | { type: "sms"; phoneNumber: string };
 
-let notifications: Notification[] = [
+let notifications: AppNotification[] = [
   { type: "email", address: "dev@example.com" },
   { type: "sms", phoneNumber: "+2348012345678" },
 ];
