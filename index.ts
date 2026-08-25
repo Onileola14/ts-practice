@@ -88,7 +88,25 @@ export function estimateResponseTime(
   }
   return Math.round(baseNumber + rateNumber * promptLength);
 }
-console.log(estimateResponseTime(8,"text"));
+console.log(estimateResponseTime(8, "text"));
+
+
+
+
+type MathOperation = (a: number, b: number) => number;
+
+const add: MathOperation = (a, b) => a + b;
+const multiply: MathOperation = (a, b) => a * b;
+
+function calculate(a: number, b: number, operation: MathOperation) {
+  return operation(a, b);
+}
+
+console.log(calculate(3,7,add));
+console.log(calculate(3,7,multiply));
+
+
+
 
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];

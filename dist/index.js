@@ -67,6 +67,13 @@ function estimateResponseTime(promptLength = 100, modelType = "text") {
     return Math.round(baseNumber + rateNumber * promptLength);
 }
 console.log(estimateResponseTime(8, "text"));
+const add = (a, b) => a + b;
+const multiply = (a, b) => a * b;
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
+console.log(calculate(3, 7, add));
+console.log(calculate(3, 7, multiply));
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 // };
