@@ -74,6 +74,9 @@ function calculate(a, b, operation) {
 }
 console.log(calculate(3, 7, add));
 console.log(calculate(3, 7, multiply));
+let score = [90, 85, 78];
+const totalScore = score.reduce((sum, score) => sum + score, 0);
+console.log(totalScore);
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 // };
