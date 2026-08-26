@@ -106,12 +106,12 @@ let score: number[] = [90, 85, 78];
 const totalScore = score.reduce((sum, score) => sum + score, 0);
 console.log(totalScore);
 
-type Pet = {
-  name: string;
-  age: number;
-  type: string;
-  adopted: boolean;
-};
+interface Pet {
+  name: string,
+  age: number,
+  type: string,
+  adopted: boolean,
+}
 
 const pets: Pet[] = [
   { name: "bingo", age: 3, type: "dog", adopted: true },
