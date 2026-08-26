@@ -90,9 +90,6 @@ export function estimateResponseTime(
 }
 console.log(estimateResponseTime(8, "text"));
 
-
-
-
 type MathOperation = (a: number, b: number) => number;
 
 const add: MathOperation = (a, b) => a + b;
@@ -102,16 +99,31 @@ function calculate(a: number, b: number, operation: MathOperation) {
   return operation(a, b);
 }
 
-console.log(calculate(3,7,add));
-console.log(calculate(3,7,multiply));
+console.log(calculate(3, 7, add));
+console.log(calculate(3, 7, multiply));
 
-
-
-let score : number[] = [90, 85, 78];
+let score: number[] = [90, 85, 78];
 const totalScore = score.reduce((sum, score) => sum + score, 0);
 console.log(totalScore);
 
+type Pet = {
+  name: string;
+  age: number;
+  type: string;
+  adopted: boolean;
+};
 
+const pets: Pet[] = [
+  { name: "bingo", age: 3, type: "dog", adopted: true },
+  { name: "black tiger", age: 4, type: "cat", adopted: false },
+  { name: "tochi", age: 1, type: "dog", adopted: false },
+  { name: "small wolve", age: 3, type: "dog", adopted: true },
+  { name: "chika", age: 5, type: "dog", adopted: true },
+  { name: "bingo", age: 7, type: "dog", adopted: true },
+];
+
+const petWithAgeLessTHanFive = pets.filter((pet) => pet.age < 5 && pet.adopted === true);
+console.log(petWithAgeLessTHanFive);
 
 
 // const userName = (firstName: string, lastName: string): string | undefined => {

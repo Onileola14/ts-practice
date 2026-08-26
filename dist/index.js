@@ -77,6 +77,16 @@ console.log(calculate(3, 7, multiply));
 let score = [90, 85, 78];
 const totalScore = score.reduce((sum, score) => sum + score, 0);
 console.log(totalScore);
+const pets = [
+    { name: "bingo", age: 3, type: "dog", adopted: true },
+    { name: "black tiger", age: 4, type: "cat", adopted: false },
+    { name: "tochi", age: 1, type: "dog", adopted: false },
+    { name: "small wolve", age: 3, type: "dog", adopted: true },
+    { name: "chika", age: 5, type: "dog", adopted: true },
+    { name: "bingo", age: 7, type: "dog", adopted: true },
+];
+const petWithAgeLessTHanFive = pets.filter((pet) => pet.age < 5 && pet.adopted === true);
+console.log(petWithAgeLessTHanFive);
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 // };
