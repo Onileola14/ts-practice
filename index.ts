@@ -122,10 +122,10 @@ const pets: Pet[] = [
   { name: "bingo", age: 7, type: "dog", adopted: true },
 ];
 
-const petWithAgeLessTHanFive = pets.filter(
+const petWithAgeLessTHanFive: readonly Pet[] = pets.filter(
   (pet) => pet.age < 5 && pet.adopted === true && pet.type === "dog",
 );
-petWithAgeLessTHanFive.push({ name: "new dog", age: 2, type: "dog", adopted: true });
+// petWithAgeLessTHanFive.push({ name: "new dog", age: 2, type: "dog", adopted: true });
 petWithAgeLessTHanFive.forEach((pet) => {
   console.log(`Name: ${pet.name}, Age: ${pet.age}, Type: ${pet.type}`);
 });
