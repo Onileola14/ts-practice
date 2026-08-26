@@ -122,7 +122,7 @@ const pets: Pet[] = [
   { name: "bingo", age: 7, type: "dog", adopted: true },
 ];
 
-const petWithAgeLessTHanFive = pets.filter((pet) => pet.age < 5 && pet.adopted === true);
+const petWithAgeLessTHanFive = pets.filter((pet) => pet.age < 5 && pet.adopted === true && pet.type === "dog");
 console.log(petWithAgeLessTHanFive);
 
 
