@@ -85,7 +85,7 @@ const pets = [
     { name: "chika", age: 5, type: "dog", adopted: true },
     { name: "bingo", age: 7, type: "dog", adopted: true },
 ];
-const petWithAgeLessTHanFive = pets.filter((pet) => pet.age < 5 && pet.adopted === true && pet.type === "dog");
+const petWithAgeLessTHanFive = pets.filter((pet) => pet.age < 5 && pet.adopted === true && pet.type === "cat");
 console.log(petWithAgeLessTHanFive);
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];

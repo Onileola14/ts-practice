@@ -123,7 +123,7 @@ const pets: Pet[] = [
 ];
 
 const petWithAgeLessTHanFive = pets.filter(
-  (pet) => pet.age < 5 && pet.adopted === true && pet.type === "dog",
+  (pet) => pet.age < 5 && pet.adopted === true && pet.type === "cat",
 );
 console.log(petWithAgeLessTHanFive);
 
