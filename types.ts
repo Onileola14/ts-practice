@@ -55,7 +55,9 @@ type Config = { apiKey: string };
 
 // (b) type aliases can express unions directly; interfaces cannot.
 type Shape = { kind: "circle"; radius: number } | { kind: "square"; side: number };
-// interface Shape2 = ... // ❌ interfaces can't be assigned a union like this
+// There is no interface equivalent of the line above — interface syntax
+// has no way to express "this OR that" at all. You can only give an
+// interface a single object shape (or extend/combine shapes with `extends`).
 
 // (c) Both support extending/combining — just different keywords:
 // interface A extends B {}      →      type A = B & { ... };
