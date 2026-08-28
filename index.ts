@@ -131,6 +131,11 @@ petWithAgeLessTHanFive.forEach((pet) => {
 });
 console.log(petWithAgeLessTHanFive);
 
+type Way = "up" | "down" | "left" | "right";
+function move(direction: Way): void {
+  console.log(`Moving ${direction}`);
+}
+move("up"); // ✅
 
 
 

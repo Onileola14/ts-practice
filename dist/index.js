@@ -91,6 +91,10 @@ petWithAgeLessTHanFive.forEach((pet) => {
     console.log(`Name: ${pet.name}, Age: ${pet.age}, Type: ${pet.type}`);
 });
 console.log(petWithAgeLessTHanFive);
+function move(direction) {
+    console.log(`Moving ${direction}`);
+}
+move("up"); // ✅
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 // };
