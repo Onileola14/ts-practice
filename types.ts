@@ -15,7 +15,7 @@ type ID = string | number; // interfaces can't do this
 type Callback = () => void; // interfaces technically can, but type reads cleaner
 type Status = "pending" | "active" | "closed"; // a union of exact string values
 
-let userId: ID = "abc123";
+let userI: ID = "abc123";
 userId = 42; // ✅ also valid
 let currentStatus: Status = "active";
 // currentStatus = "cancelled"; // ❌ not one of the allowed literal values
@@ -33,8 +33,8 @@ let entry: LogEntry = {
 };
 
 // 4. Type aliases for function signatures
-type MathOperation = (a: number, b: number) => number;
-const add: MathOperation = (a, b) => a + b;
+type MathOperation2 = (a: number, b: number) => number;
+const ad: MathOperation2 = (a, b) => a + b;
 
 // 5. Generic type aliases — reusable, parameterized shapes
 type ApiResponse<T> = {
