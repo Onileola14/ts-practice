@@ -3,14 +3,14 @@
 // modern alternative (union of string literals)
 
 // 1. Numeric enum — auto-incrementing values by default
-enum Status {
+enum Acessed {
   Pending, // 0
   Active, // 1
   Closed, // 2
 }
-let currentStatus: Status = Status.Active;
-console.log(currentStatus); // 1
-console.log(Status[1]); // "Active" — numeric enums support reverse lookup
+let currentStatus_: Acessed = Acessed.Active;
+console.log(currentStatus_); // 1
+console.log(Acessed[1]); // "Active" — numeric enums support reverse lookup
 
 // 2. Numeric enum with a custom starting value
 enum Priority {
@@ -38,13 +38,13 @@ checkAccess(Role.Viewer); // ✅ type-checked
 // 5. const enum — inlined at compile time, no runtime object generated
 // (slightly more efficient, but can't be used with some build tools —
 // worth checking your bundler before reaching for this)
-const enum Direction {
+const enum Direction_ {
   Up,
   Down,
   Left,
   Right,
 }
-let move: Direction = Direction.Up; // compiles to the literal value 0
+let move: Direction_ = Direction.Up; // compiles to the literal value 0
 
 // 6. The modern alternative: union of string literals
 // Many teams prefer this over enums entirely — see the comparison below
