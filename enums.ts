@@ -44,7 +44,7 @@ const enum Direction_ {
   Left,
   Right,
 }
-let move: Direction_ = Direction.Up; // compiles to the literal value 0
+let move_: Direction_ = Direction_.Up; // compiles to the literal value 0
 
 // 6. The modern alternative: union of string literals
 // Many teams prefer this over enums entirely — see the comparison below
