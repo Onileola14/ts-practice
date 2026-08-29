@@ -3,15 +3,15 @@
 // Day 8 topic: enums — numeric, string, const enums, and the
 // modern alternative (union of string literals)
 // 1. Numeric enum — auto-incrementing values by default
-var Status;
-(function (Status) {
-    Status[Status["Pending"] = 0] = "Pending";
-    Status[Status["Active"] = 1] = "Active";
-    Status[Status["Closed"] = 2] = "Closed";
-})(Status || (Status = {}));
-let currentStatus = Status.Active;
-console.log(currentStatus); // 1
-console.log(Status[1]); // "Active" — numeric enums support reverse lookup
+var Acessed;
+(function (Acessed) {
+    Acessed[Acessed["Pending"] = 0] = "Pending";
+    Acessed[Acessed["Active"] = 1] = "Active";
+    Acessed[Acessed["Closed"] = 2] = "Closed";
+})(Acessed || (Acessed = {}));
+let currentStatus_ = Acessed.Active;
+console.log(currentStatus_); // 1
+console.log(Acessed[1]); // "Active" — numeric enums support reverse lookup
 // 2. Numeric enum with a custom starting value
 var Priority;
 (function (Priority) {
@@ -34,7 +34,7 @@ function checkAccess(role) {
     return role === Role.Admin || role === Role.Editor;
 }
 checkAccess(Role.Viewer); // ✅ type-checked
-let move = 0 /* Direction.Up */; // compiles to the literal value 0
+let move_ = 0 /* Direction_.Up */; // compiles to the literal value 0
 let literalStatus = "active";
 // literalStatus = "cancelled"; // ❌ same safety as an enum
 // 7. Why some teams skip enums for union literals instead:
