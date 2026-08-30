@@ -3,7 +3,7 @@
 // Day 9 topic: classes — property typing, access modifiers,
 // implementing interfaces, abstract classes, and generics
 // 1. Basic class with typed properties
-class User {
+class User_ {
     name;
     age;
     constructor(name, age) {
@@ -14,7 +14,7 @@ class User {
         return `Hi, I'm ${this.name}`;
     }
 }
-const onileola = new User("Onileola", 24);
+const onileola_ = new User_("Onileola", 24);
 // 2. Access modifiers — public, private, protected
 class Account {
     username; // accessible anywhere (default if omitted)
