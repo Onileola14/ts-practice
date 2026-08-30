@@ -40,7 +40,7 @@ console.log(acc.username); // ✅ public
 
 // 3. Shorthand constructor property declaration
 // (declares AND assigns the property in one step)
-class Product {
+class Product_ {
   constructor(
     public id: string,
     public price: number,
@@ -51,16 +51,16 @@ class Product {
     return this.inStock;
   }
 }
-const laptop = new Product("p-01", 899);
+const laptop_ = new Product_("p-01", 899);
 
 // 4. readonly class properties — set once (in the constructor), locked after
-class Config {
+class Config_ {
   readonly apiKey: string;
   constructor(apiKey: string) {
     this.apiKey = apiKey;
   }
 }
-const config = new Config("abc123");
+const config_ = new Config_("abc123");
 // config.apiKey = "xyz789"; // ❌ Cannot assign to 'apiKey' because it is read-only
 
 // 5. Implementing an interface — the class must fulfill the contract
