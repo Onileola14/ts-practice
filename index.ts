@@ -157,8 +157,8 @@ class ExamResult {
 }
 
 const bolaR = new ExamResult("MTS","BOLA",85)
-
-console.log(bolaR.getScorePercentage());
+bolaR.getScorePercentage()
+console.log(bolaR)
 
 
 // const userName = (firstName: string, lastName: string): string | undefined => {
