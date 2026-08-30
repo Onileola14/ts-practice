@@ -151,6 +151,9 @@ class ExamResult {
     console.log(`${studentName} scored ${studentScore} in ${subject}`);
     
   }
+  getScorePercentage(): number {
+    return (this.studentScore / 100) * 100;
+  }
 }
 
 const bolaR = new ExamResult("MTS","BOLA",85)
