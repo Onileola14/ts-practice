@@ -3,7 +3,7 @@
 // implementing interfaces, abstract classes, and generics
 
 // 1. Basic class with typed properties
-class User {
+class User_ {
   name: string;
   age: number;
 
@@ -16,7 +16,7 @@ class User {
     return `Hi, I'm ${this.name}`;
   }
 }
-const onileola = new User("Onileola", 24);
+const onileola_ = new User_("Onileola", 24);
 
 // 2. Access modifiers — public, private, protected
 class Account {
