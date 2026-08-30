@@ -94,7 +94,20 @@ console.log(petWithAgeLessTHanFive);
 function move(direction) {
     console.log(`Moving ${direction}`);
 }
-move("up"); // ✅
+move("up");
+class ExamResult {
+    subject;
+    studentName;
+    studentScore;
+    constructor(subject, studentName, studentScore) {
+        this.subject = subject;
+        this.studentName = studentName;
+        this.studentScore = studentScore;
+        console.log(`${studentName} scored ${studentScore} in ${subject}`);
+    }
+}
+const bolaR = new ExamResult("MTS", "BOLA", 85);
+console.log(bolaR);
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 // };

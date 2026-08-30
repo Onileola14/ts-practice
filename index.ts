@@ -107,10 +107,10 @@ const totalScore = score.reduce((sum, score) => sum + score, 0);
 console.log(totalScore);
 
 interface Pet {
-  name: string,
-  age: number,
-  type: string,
-  adopted: boolean,
+  name: string;
+  age: number;
+  type: string;
+  adopted: boolean;
 }
 
 const pets: Pet[] = [
@@ -135,8 +135,27 @@ type Way = "up" | "down" | "left" | "right";
 function move(direction: Way): void {
   console.log(`Moving ${direction}`);
 }
-move("up"); // ✅
+move("up");
 
+
+
+class ExamResult {
+  subject: string;
+  studentName: string;
+  studentScore: number;
+
+  constructor(subject: string, studentName: string, studentScore: number) {
+    this.subject = subject;
+    this.studentName = studentName;
+    this.studentScore = studentScore;
+    console.log(`${studentName} scored ${studentScore} in ${subject}`);
+    
+  }
+}
+
+const bolaR = new ExamResult("MTS","BOLA",85)
+
+console.log(bolaR);
 
 
 // const userName = (firstName: string, lastName: string): string | undefined => {
