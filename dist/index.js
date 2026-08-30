@@ -105,9 +105,12 @@ class ExamResult {
         this.studentScore = studentScore;
         console.log(`${studentName} scored ${studentScore} in ${subject}`);
     }
+    getScorePercentage() {
+        return (this.studentScore / 100) * 100;
+    }
 }
 const bolaR = new ExamResult("MTS", "BOLA", 85);
-// console.log(bolaR);
+console.log(bolaR);
 // const userName = (firstName: string, lastName: string): string | undefined => {
 //   return firstName.toLowerCase()[0] + lastName.toLowerCase()[0];
 // };
