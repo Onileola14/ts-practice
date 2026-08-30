@@ -75,7 +75,7 @@ class Circle implements Shape_ {
 }
 
 // 6. Extending a class (inheritance)
-class Employee extends User {
+class Employee extends User_ {
   role: string;
   constructor(name: string, age: number, role: string) {
     super(name, age); // must call the parent constructor first
@@ -99,13 +99,13 @@ abstract class Animal {
     return `${this.name} says ${this.makeSound()}`;
   }
 }
-class Dog extends Animal {
+class Dog_ extends Animal {
   makeSound(): string {
     return "Woof!";
   }
 }
 // new Animal("Generic"); // ❌ Cannot create an instance of an abstract class
-const dog = new Dog("Rex");
+const dog = new Dog_("Rex");
 console.log(dog.describe());
 
 // 8. Generic classes

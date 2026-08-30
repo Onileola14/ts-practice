@@ -34,7 +34,7 @@ console.log(acc.username); // ✅ public
 // console.log(acc.balance); // ❌ Property 'balance' is private
 // 3. Shorthand constructor property declaration
 // (declares AND assigns the property in one step)
-class Product {
+class Product_ {
     id;
     price;
     inStock;
@@ -47,15 +47,15 @@ class Product {
         return this.inStock;
     }
 }
-const laptop = new Product("p-01", 899);
+const laptop_ = new Product_("p-01", 899);
 // 4. readonly class properties — set once (in the constructor), locked after
-class Config {
+class Config_ {
     apiKey;
     constructor(apiKey) {
         this.apiKey = apiKey;
     }
 }
-const config = new Config("abc123");
+const config_ = new Config_("abc123");
 class Circle {
     radius;
     constructor(radius) {
@@ -66,7 +66,7 @@ class Circle {
     }
 }
 // 6. Extending a class (inheritance)
-class Employee extends User {
+class Employee extends User_ {
     role;
     constructor(name, age, role) {
         super(name, age); // must call the parent constructor first
@@ -90,13 +90,13 @@ class Animal {
         return `${this.name} says ${this.makeSound()}`;
     }
 }
-class Dog extends Animal {
+class Dog_ extends Animal {
     makeSound() {
         return "Woof!";
     }
 }
 // new Animal("Generic"); // ❌ Cannot create an instance of an abstract class
-const dog = new Dog("Rex");
+const dog = new Dog_("Rex");
 console.log(dog.describe());
 // 8. Generic classes
 class Box {
