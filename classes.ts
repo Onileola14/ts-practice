@@ -109,14 +109,14 @@ const dog = new Dog_("Rex");
 console.log(dog.describe());
 
 // 8. Generic classes
-class Box<T> {
+class Box_<T> {
   constructor(private contents: T) {}
   getContents(): T {
     return this.contents;
   }
 }
-const stringBox = new Box<string>("hello");
-const numberBox = new Box<number>(42);
+const stringBox = new Box_<string>("hello");
+const numberBox_ = new Box_<number>(42);
 
 // Key takeaway:
 // Classes combine everything from earlier files — typed properties,
