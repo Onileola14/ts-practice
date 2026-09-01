@@ -2,7 +2,7 @@
 // Day 11 topic: built-in utility types — reshaping existing types
 // instead of writing new ones from scratch
 
-interface User {
+interface User_ {
   id: string;
   name: string;
   email: string;
