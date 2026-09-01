@@ -11,7 +11,7 @@ interface User_ {
 
 // 1. Partial<T> — makes every property optional
 // Useful for "update" functions where only some fields change
-function updateUser(id: string, updates: Partial<User>): void {
+function updateUser(id: string, updates: Partial<User_>): void {
   console.log(`Updating user ${id}`, updates);
 }
 updateUser("u-01", { name: "New Name" }); // ✅ other fields not required
