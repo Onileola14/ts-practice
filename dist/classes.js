@@ -99,7 +99,7 @@ class Dog_ extends Animal {
 const dog = new Dog_("Rex");
 console.log(dog.describe());
 // 8. Generic classes
-class Box {
+class Box_ {
     contents;
     constructor(contents) {
         this.contents = contents;
@@ -108,8 +108,8 @@ class Box {
         return this.contents;
     }
 }
-const stringBox = new Box("hello");
-const numberBox = new Box(42);
+const stringBox = new Box_("hello");
+const numberBox_ = new Box_(42);
 // Key takeaway:
 // Classes combine everything from earlier files — typed properties,
 // function signatures, interfaces (implements), and generics — into
