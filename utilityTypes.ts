@@ -62,7 +62,7 @@ type CreateUserArgs = Parameters<typeof createUser>; // [string, number]
 const args: CreateUserArgs = ["Onileola", 24];
 
 // 9. Combining utility types — they compose
-type UpdatablePreview = Partial<Pick<User, "name" | "email">>;
+type UpdatablePreview = Partial<Pick<User_, "name" | "email">>;
 const change: UpdatablePreview = { name: "Updated Name" }; // both fields optional
 
 // Key takeaway:
