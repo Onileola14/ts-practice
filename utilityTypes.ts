@@ -40,7 +40,7 @@ type UserPreview = Pick<User_, "id" | "name">;
 const preview: UserPreview = { id: "u-01", name: "Onileola" };
 
 // 5. Omit<T, K> — the inverse of Pick: everything EXCEPT selected keys
-type PublicUser = Omit<User, "email">;
+type PublicUser = Omit<User_, "email">;
 const publicUser: PublicUser = { id: "u-01", name: "Onileola", age: 24 };
 
 // 6. Record<K, V> — build an object type from a set of keys to one value type
@@ -52,7 +52,7 @@ const permissions: RolePermissions = {
 };
 
 // 7. ReturnType<T> — extract a function's return type without repeating it
-function createUser(name: string, age: number): User {
+function createUser(name: string, age: number): User_ {
   return { id: "u-99", name, email: `${name}@example.com`, age };
 }
 type CreatedUser = ReturnType<typeof createUser>; // same shape as User
