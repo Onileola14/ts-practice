@@ -27,7 +27,7 @@ const post: FinalPost = { title: "Hello", body: "Must be present now" };
 // const bad: FinalPost = { title: "Hello" }; // ❌ 'body' is now required
 
 // 3. Readonly<T> — locks every property against reassignment
-const lockedUser: Readonly<User> = {
+const lockedUser: Readonly<User_> = {
   id: "u-01",
   name: "Onileola",
   email: "dev@example.com",
