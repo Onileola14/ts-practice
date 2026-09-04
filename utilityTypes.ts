@@ -36,7 +36,7 @@ const lockedUser: Readonly<User> = {
 // lockedUser.name = "New Name"; // ❌ Cannot assign to 'name' — readonly
 
 // 4. Pick<T, K> — build a smaller type from selected keys
-type UserPreview = Pick<User, "id" | "name">;
+type UserPreview = Pick<User_, "id" | "name">;
 const preview: UserPreview = { id: "u-01", name: "Onileola" };
 
 // 5. Omit<T, K> — the inverse of Pick: everything EXCEPT selected keys
