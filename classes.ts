@@ -64,7 +64,7 @@ const config_ = new Config_("abc123");
 // config.apiKey = "xyz789"; // ❌ Cannot assign to 'apiKey' because it is read-only
 
 // 5. Implementing an interface — the class must fulfill the contract
-interface Shape_ {
+interface Shape__ {
   area(): number;
 }
 class Circle implements Shape_ {
