@@ -16,7 +16,7 @@ class User__ {
     return `Hi, I'm ${this.name}`;
   }
 }
-const onileola_ = new User_("Onileola", 24);
+const onileola_ = new User__("Onileola", 24);
 
 // 2. Access modifiers — public, private, protected
 class Account {
