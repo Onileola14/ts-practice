@@ -40,7 +40,7 @@ console.log(acc.username); // ✅ public
 
 // 3. Shorthand constructor property declaration
 // (declares AND assigns the property in one step)
-class Product__ {
+class Product_{
   constructor(
     public id: string,
     public price: number,
