@@ -3,7 +3,7 @@
 // implementing interfaces, abstract classes, and generics
 
 // 1. Basic class with typed properties
-class User_ {
+class User__ {
   name: string;
   age: number;
 
