@@ -99,7 +99,7 @@ abstract class Animal{
     return `${this.name} says ${this.makeSound()}`;
   }
 }
-class Dog_ extends Animal {
+class Dog_ extends Animal_ {
   makeSound(): string {
     return "Woof!";
   }
