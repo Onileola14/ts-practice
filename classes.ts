@@ -75,7 +75,7 @@ class Circle implements Shape_ {
 }
 
 // 6. Extending a class (inheritance)
-class Employee extends User_ {
+class Employee extends User__ {
   role: string;
   constructor(name: string, age: number, role: string) {
     super(name, age); // must call the parent constructor first
