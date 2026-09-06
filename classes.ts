@@ -92,7 +92,7 @@ console.log(dev.greet());
 
 // 7. Abstract classes — a base class that can't be instantiated directly,
 // and can force subclasses to implement certain methods
-abstract class Animal_ {
+abstract class Animal{
   constructor(protected name: string) {}
   abstract makeSound(): string; // no body — subclasses MUST implement this
   describe(): string {
