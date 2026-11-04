@@ -138,7 +138,6 @@ function move(direction: Way): void {
 move("up");
 
 
-
 class ExamResult {
   subject: string;
   studentName: string;
