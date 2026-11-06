@@ -5,7 +5,7 @@
 let scores: number[] = [90, 85, 78];
 let names: Array<string> = ["Onileola", "Ada", "Chidi"];
 
-// scores.push("high"); // ❌ Argument of type 'string' is not assignable to type 'number'
+//scores.push("high"); // ❌ Argument of type 'string' is not assignable to type 'number'
 
 // 2. Arrays of objects — combine with an interface/type for structure
 interface Task {
