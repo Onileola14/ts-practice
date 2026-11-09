@@ -1,7 +1,7 @@
 // arrays.ts
 // Day 3 topic: typing arrays, tuples, and array methods
 
-// 1. Basic typed arrays — two equivalent syntaxes
+// 1. Basic typed arrays — two equivalent syntaxe
 let scores: number[] = [90, 85, 78];
 let names: Array<string> = ["Onileola", "Ada", "Chidi"];
 
