@@ -17,7 +17,7 @@ let tasks: Task[] = [
   { title: "Deploy to production", done: true },
 ];
 
-// 3. Union type arrays — elements can be more than one type
+// 3. Union type arrays —--- elements can be more than one type
 let mixed: (string | number)[] = ["id-1", 2, "id-3", 4];
 // 4. readonly arrays — prevent mutation entirely
 const fixedStack: readonly string[] = ["Node.js", "Express", "MongoDB"];
